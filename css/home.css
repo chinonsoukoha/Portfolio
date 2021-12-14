@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* Navbar */
+.navbar{
+    padding: 2% !important;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+}
+.navbar-toggler{
+    padding-right: 0;
+    outline: none;
+    border: none;
+}
+.nav-link{
+    color: #76A4FF !important;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #DAE6FF !important;
+}
+.navbar-nav.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.nav-contact{
+    border: 3px solid  transparent;
+    text-align: center;
+    border-radius: 100px;
+    background-image: linear-gradient(#101940, #101940), 
+                        linear-gradient(180deg, #5BE175 0%, #76A4FF 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.contact-link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Banner */
+.banner{
+    padding-left: 8% !important;
+    background-color: #101940;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+.banner-header{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 900;
+    background-image: linear-gradient(180deg, #5BE175 0%, #75A7FB 100%);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.text-responsive{
+    font-size: 3vw;
+}
+.banner-paragraph{
+    color: #ffffff;
+    font-family: 'Lora', 'serif';
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.banner-parasmall{
+    color: #489979;
+    font-family: 'Lora', 'serif';
+    font-size: 1.5vw;
+    font-weight: 400;
+
+}
+.border-row{
+    margin-top: -2%;
+}
+
+
+
+
+
+
+
+
+
+/* About */
+.about{
+    padding-top: 2%;
+    background-image: url("../images/aboutd.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55vw;
+}
+.about-header{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    color: #101940;
+    text-align: center;
+}
+.profile{
+    width: 50%;
+    margin-left: 16%;
+    margin-top: 15%;
+}
+.about-txt{
+    font-family: 'Lora', 'serif';
+    line-height: 50px;
+    font-size: 1.4vw;
+    padding-top: 10%;
+    color: #6A6A6A;
+}
+.about-subheader{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 600;
+    color: #101940;
+    font-size: 1.8vw;
+    margin-bottom: 5%;
+}
+.tech-txt{
+    font-family: 'Lora', 'serif';
+    color: #6A6A6A;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+.tech-icon{
+    color: #101940 !important;
+    margin-top: 1%;
+    margin-right: 2%;
+    font-size: 150%;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Projects */
+.project{
+    background: #F7F8FA;
+    padding-top: 2%;
+}
+.project-header{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    color: #101940;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.img-display{
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+.banner-btn{
+    font-family: 'lora', serif;
+    background: linear-gradient(180deg, #5CD97D -100%, #75A7F9 150%);
+    color: #fff; 
+    width: 30%; 
+    padding: 1.2vh; 
+    border: none; 
+    border-radius: 5px; 
+    outline: none;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.banner-btn:hover{
+    border: 3px solid  transparent;
+    color: #75A7F9;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(#fff, #fff), 
+                        linear-gradient(180deg, #5BE175 0%, #76A4FF 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.banner-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.image {
+    transition: filter 0.2s;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10%;
+}
+.overlay:hover .image {
+    filter: brightness(40%);
+}
+.overlay:hover .middle {
+    opacity: 1;
+    transform: translateY(0);
+}
+.text {
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'lora', serif;
+}
+.middleTwo{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    padding-left: 5%;
+}
+.overlay:hover .middleTwo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+/* Resumé */
+.resume{
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.educationbody{
+    margin-bottom: 3%;
+}
+.resume-subheader{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 600;
+    color: #101940;
+    font-size: 1.8vw;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 1px solid #5BE175;
+    padding: 5px;
+}
+.resume-txt{
+    font-family: 'Lora', 'serif';
+    color: #6A6A6A;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+.resume-txtTwo{
+    font-family: 'Lora', 'serif';
+    color: #6A6A6A;
+    font-size: 1.4vw;
+}
+
+
+
+
+
+
+/* Contact */
+.contact{
+    background: #101940;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 4%;
+}
+.contact-header{
+    font-family: 'Playfair Display', 'serif';
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.contact-txt{
+    font-family: 'Lora', 'serif';
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+.contact-txtTwo{
+    font-family: 'Lora', 'serif';
+    color: #fff;
+    font-size: 1.4vw;
+    padding-bottom: 10%;
+}
+.message{
+    background: #fff;
+    border-radius: 10px;
+    padding: 3%;
+}
+.message-txt{
+    font-family: 'Lora', 'serif';
+    color: #101940;
+    font-size: 1.7vw;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+.form-control{
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5%;
+}
+.detail{
+    margin-bottom: 3%;
+}
+.links{
+    border: 1px solid transparent;
+    background-image: linear-gradient(#101940, #101940), 
+                        linear-gradient(180deg, #5BE175 0%, #76A4FF 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 3%;
+}
+.links:hover{
+    background: linear-gradient(180deg, #5CD97D -100%, #75A7F9 150%);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-device-width: 300px) {
+    .about-txt{
+        line-height: 10px !important;
+        font-size: 1.3vw;
+        padding-top: 1%;
+    }
+    .intelc{
+        margin-right: -4% !important;
+    }
+    .intelc-pic{
+        width: 120% !important;
+    }
+}
+@media only screen and (min-device-width: 530px) {
+    .about-txt{
+        line-height: 30px !important;
+        font-size: 1.3vw;
+        padding-top: 1%;
+    }
+    .intelc{
+        margin-right: -2% !important;
+    }
+    .intelc-pic{
+        width: 107% !important;
+    }
+}
+@media only screen and (max-device-width: 600px) {
+    
+    #logo{
+        width: 40%;
+    }
+    .text-responsive{
+        font-size: 2vh
+    }
+    .name-line{
+        width: 5%;
+    }    
+    .nav-link{
+        font-size: 1.5vh
+    }
+    .nav-contact{
+        width: 50%;
+        margin: 0;
+    }
+    .arrow{
+        position: absolute;
+        top: 30%;
+        right: 6%;
+    }
+    .scroll{
+        display: none;
+    }
+    .nav-contact{
+        border: 1px solid  transparent;
+    }
+    .banner-img{
+        width: 120%;
+    }
+    .about{
+        overflow:hidden;
+    }
+    .about-txt{
+        line-height: 15px;
+        font-size: 1.3vw;
+        padding-top: 1%;
+    }
+    .about-subheader{
+        margin-top: -5%;
+    }
+    .tech-icon{
+        color: #101940 !important;
+        margin-right: 5%;
+        font-size: 50%;
+        margin-bottom: 10%;
+    }
+    .intelc{
+        margin-right: -3%;
+    }
+    .intelc-pic{
+        width: 113%;
+    }
+    .banner-btn{
+        width: 40%;
+        padding: 1vh;
+        font-size: 2vw;
+    }
+    .middleTwo{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 60%;
+        padding-left: 5%;
+    }
+    .resume-icon{
+        font-size: 45%!important;
+    }
+    .dates{
+        margin-left: 65%!important;
+    }
+    .contact-txt{
+        padding-bottom: 2% !important;
+    }
+    .contact-txtTwo{
+        padding-bottom: 2% !important;
+    }
+    .links{
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        padding-top: 4px;
+    }
+    input,
+    input::-webkit-input-placeholder, textarea, textarea::-webkit-input-placeholder  {
+    font-size: 10px;
+    line-height: 3;
+}
+    .message-txt{
+        font-family: 'Lora', 'serif';
+        color: #101940;
+        font-size: 2vh;
+        font-weight: bold;
+        padding-bottom: 3%;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+    #logo{
+        width: 60%;
+    }
+    .intelc{
+        margin-right: -1% !important;
+    }
+    .intelc-pic{
+        width: 104% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    #logo{
+        width: 80%;
+    }
+    .banner-header{
+        margin-bottom: 5%;
+    }
+    .banner-paragraph{
+        margin-bottom: 5%;
+    }
+    .about-txt{
+        font-family: 'Lora', 'serif';
+        line-height: 50px !important;
+        font-size: 1.4vw;
+        padding-top: 10%;
+        color: #6A6A6A;
+    }
+    .intelc{
+        margin-right: -1% !important;
+    }
+    .intelc-pic{
+        width: 101.5% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .intelc{
+        margin-right: -1% !important;
+    }
+    .intelc-pic{
+        width: 100% !important;
+    }
+}
